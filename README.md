@@ -1,5 +1,6 @@
 # VmdtStr
 Detect VMMs with faulty handling of STR exit
+*NOTE:* This requires the VMM in question to have descriptor exiting control enabled!
 # Showcase
 This is the output on a KVM with no nested VMM active:
 ![](BareKVM.png)
