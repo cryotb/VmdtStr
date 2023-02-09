@@ -1,6 +1,8 @@
 .CODE
 
 VmdtRunCheck PROC
+    xor rax, rax
+
     push rsi
     push rdi
 
@@ -14,7 +16,7 @@ VmdtRunCheck PROC
     and rsi, rdi
     cmp rsi, 0
     jne finish
-    mov ax, 1
+    mov al, 1
 
 finish:
     pop rdi
